@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body {
+    background-color: #F3F5FC;
+}
+
+h1 {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Patua One",cursive;
+    font-size: 2em;
+    color: #0A3871;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+textarea {
+    background-color: #C2CADC;
+}
+.descripcion,
+label {
+    text-align: center;
+    font-family: "Patua One",cursive;
+}
+
+.container {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-box1 {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+.text-box2 {
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
+}
+.titles {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #0A3871;
+}
+.input-text,
+.response {
+    width: 80%;
+    border-radius: 4px;
+}
+
+.btnEncrypt,
+.btnDesencrypt,
+.btnCopy {
+    position: flex;
+    width: 181px;
+    height: 37px;
+    background: #0A3871;
+    border-radius: 10px;
+    font-family: "Patua One",cursive;
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+.btnDesencrypt {
+position: flex;
+width: 181px;
+height: 37px;
+background:#D8DFE8;
+border-radius: 10px;
+font-family: "Patua One",cursive;
+}
+
+
+@media screen and (max-width: 480px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    .btnDesencrypt,.btnCopy{
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    .btnDesencrypt, .btnCopy{
+        margin-bottom: 1em;
+    }
+}
